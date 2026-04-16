@@ -9,7 +9,7 @@ st.title("📊 Analista Inteligente Multiformato")
 st.markdown("Sube cualquier archivo Excel. El sistema detectará las columnas y procesará los números automáticamente.")
 
 # 2. Configuración de la API
-API_KEY = "AIzaSyDuInsix1XbaXneBQ0nTUyuywI2jzBzsJ8"
+API_KEY = st.secrets["gemini_api_key"]
 genai.configure(api_key=API_KEY)
 
 @st.cache_resource
